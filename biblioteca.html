@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Librería - Semilla Consciente</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Montserrat para títulos y Lato para cuerpo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Lato:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ==================== CABECERA ==================== -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo-left">
+                <div class="logo-circle"><i class="fa-solid fa-user"></i></div>
+            </div>
+            <h1 class="header-title">Semilla Consciente</h1>
+            <div class="header-logo-right">
+                <div class="logo-circle dark"><img src="img/logo.png" alt="Logo Semilla Consciente"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Buscador en lado izquierdo -->
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Enter search terms" class="search-input">
+                <button type="submit" class="search-btn">🔍</button>
+            </form>
+
+            <!-- Opciones de navegación en lado derecho -->
+            <ul class="nav-links">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="biblioteca.html" class="active">Tu librería</a></li>
+                <li><a href="tienda.html">Comprar</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== SECCIÓN DESTACADA ==================== -->
+    <section class="shop-hero">
+        <h2>LIBROS</h2>
+    </section>
+
+    <!-- ==================== CONTENIDO PRINCIPAL CON DOS COLUMNAS ==================== -->
+    <main class="shop-container">
+        <!-- COLUMNA IZQUIERDA: CATEGORÍAS -->
+        <aside class="categories-sidebar">
+            <h2>CATEGORÍAS</h2>
+            <ul class="categories-list">
+                <li><a href="tienda.html" class="category-link">
+                        <span class="icon">🛍️</span> Todos los productos
+                    </a></li>
+                <li><a href="biblioteca.html" class="category-link active">
+                        <span class="icon">📚</span> Libros
+                    </a></li>
+                <li><a href="tazas.html" class="category-link">
+                        <span class="icon">☕</span> Tazas
+                    </a></li>
+                <li><a href="bolsas.html" class="category-link">
+                        <span class="icon">👜</span> Bolsas
+                    </a></li>
+                <li><a href="otros.html" class="category-link">
+                        <span class="icon">⭐</span> Otros
+                    </a></li>
+            </ul>
+        </aside>
+
+        <!-- COLUMNA DERECHA: PRODUCTOS -->
+        <section class="products-grid-section">
+            <div class="products-grid horizontal-scroll">
+                <!-- Producto 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/los 7 hábitos.png" alt="Los 7 hábitos">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Los 7 hábitos de la gente altamente efectiva</h3>
+                        <p class="product-description">Un libro clásico en el que el lector desarrollará aspectos que le
+                            hagan adaptarse a la realidad y a su vida cotidiana.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">23,95€</span>
+                        </div>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/el arte de amar.png" alt="El arte de amar">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">El arte de amar</h3>
+                        <p class="product-description">"El arte de amar" es una obra de Erich Fromm que explora que el
+                            amor es un arte que requiere esfuerzo, conocimiento y práctica.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">22€</span>
+                        </div>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/fluir.png" alt="FLUIR">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">FLUIR (FLOW)</h3>
+                        <p class="product-description">Explora la felicidad a través del flujo. FLUIR es considerada uno
+                            de los libros más importantes de la psicología contemporánea.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">21€</span>
+                        </div>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/quiet.png" alt="Quiet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Quiet</h3>
+                        <p class="product-description">Quiet (2012) trata sobre las fortalezas y necesidades de los
+                            introvertidos. Un libro esencial para entender mejor a la gente introvertida.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">19,50€</span>
+                        </div>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 5 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/4.png" alt="Construye">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Construye Relaciones Saludables</h3>
+                        <p class="product-description">Descubre cómo mejorar la comunicación y crear vínculos
+                            emocionales fuertes y duraderos en tus relaciones.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">18,48€</span>
+                        </div>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 6 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/3.png" alt="Autoestima Sana">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Autoestima Sana</h3>
+                        <p class="product-description">La autoestima es un pilar central de la psicología. Descubre cómo
+                            la introspección puede mejorar tu comunicación.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">23,95€</span>
+                        </div>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 7 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/2.png" alt="Mindfulness Diario">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mindfulness Diario</h3>
+                        <p class="product-description">Un "Diario de Mindfulness" es un libro de prácticas diarias para
+                            cultivar la atención plena y la autorregulación emocional.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">11,78€</span>
+                        </div>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 8 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/1.png" alt="Hábitos atómicos">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Hábitos atómicos</h3>
+                        <p class="product-description">"Hábitos atómicos" de James Clear. Descubre cómo los pequeños
+                            cambios pueden revolucionar tu vida de manera extraordinaria.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">13,98€</span>
+                        </div>
+                        <button class="btn-add-cart">Añadir al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== PIE DE PÁGINA ==================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="https://www.instagram.com/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#phone" title="Teléfono"><i class="fa-solid fa-phone"></i></a>
+                <a href="#smile" title="Sonríe"><i class="fa-regular fa-face-smile"></i></a>
+            </div>
+            <div class="footer-center">
+                <a href="#privacy">Política de datos</a> |
+                <a href="#cookies">Cookies</a>
+            </div>
+            <div class="footer-right">
+                <p>Copyright: Andrés Martínez Martínez</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/0a469f0b31.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

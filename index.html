@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semilla Consciente - Tu librería de desarrollo personal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Montserrat para títulos y Lato para cuerpo -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Lato:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ==================== CABECERA ==================== -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo-left">
+                <div class="logo-circle"><i class="fa-solid fa-user"></i></div>
+            </div>
+            <h1 class="header-title">Semilla Consciente</h1>
+            <div class="header-logo-right">
+                <div class="logo-circle dark"><img src="img/logo.png" alt="Logo Semilla Consciente"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Buscador en lado izquierdo -->
+            <form class="search-form" action="#" method="GET">
+                <input type="text" placeholder="Enter search terms" class="search-input">
+                <button type="submit" class="search-btn">🔍</button>
+            </form>
+
+            <!-- Opciones de navegación en lado derecho -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">🏠 Home</a></li>
+                <li><a href="biblioteca.html">Tu librería</a></li>
+                <li><a href="tienda.html">Comprar</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+    <main class="main-content">
+        <!-- SECCIÓN 1: PRESENTACIÓN CON TRES COLUMNAS -->
+        <section class="presentation-section">
+            <!-- Columna 1: Descripción izquierda -->
+            <article class="presentation-card left">
+                <div class="card-text">
+                    <p>¿Cansado de leer libros de autoayuda que prometen mucho pero no entregan resultados? Nosotros
+                        tampoco. Por eso creamos Semilla Consciente - una librería especializada donde cada libro está
+                        cuidadosamente seleccionado para la práctica y transformación con un libro. Todos tienen reseñas
+                        100% positivas.</p>
+                </div>
+                <div class="card-logo">
+                    <img src="img/des.png" alt="Logo Desarrollo">
+                </div>
+            </article>
+
+            <!-- Columna 2: Bienvenida central -->
+            <article class="presentation-card center">
+                <div class="welcome-box">
+                    <h2>BIENVENIDO A TU JARDIN INTERIOR</h2>
+                    <p>"Cada libro es una semilla de transformación, página a página, un crecimiento. Cada idea, la que
+                        espera a germinar para potenciarse a tu propia versión"</p>
+                </div>
+            </article>
+
+            <!-- Columna 3: Libros destacados -->
+            <article class="presentation-card right">
+                <h3 class="section-title">LIBROS QUE TRANSFORMAN VIDAS</h3>
+                <div class="books-showcase">
+                    <div class="book-category">
+                        <div class="book-icon">📖</div>
+                        <h4>Hábitos atómicos</h4>
+                        <div class="book-cover"><img src="img/1.png" alt="Hábitos atómicos"></div>
+                    </div>
+                    <div class="book-category">
+                        <div class="book-icon">📖</div>
+                        <h4>Mindfulness Diario</h4>
+                        <div class="book-cover"><img src="img/2.png" alt="Mindfulness Diario"></div>
+                    </div>
+                    <div class="book-category">
+                        <div class="book-icon">📖</div>
+                        <h4>Autoestima Sana</h4>
+                        <div class="book-cover"><img src="img/3.png" alt="Autoestima Sana"></div>
+                    </div>
+                    <div class="book-category">
+                        <div class="book-icon">📖</div>
+                        <h4>Construye</h4>
+                        <div class="book-cover"><img src="img/4.png" alt="Construye"></div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- SECCIÓN 2: TALLERES Y EVENTOS -->
+        <section class="workshops-section">
+            <h2>TALLERES Y EVENTOS</h2>
+            <div class="workshops-grid">
+                <!-- Taller 1 -->
+                <article class="workshop-card">
+                    <div class="workshop-image">
+                        <img src="img/5.png" alt="Meditación">
+                        <div class="workshop-overlay">
+                            <h3>MEDITACIÓN</h3>
+                            <p>CALMA TU MENTE</p>
+                        </div>
+                    </div>
+                    <div class="workshop-badge">MEDITACIÓN - GUIADA - GRATUITO</div>
+                </article>
+
+                <!-- Taller 2 -->
+                <article class="workshop-card">
+                    <div class="workshop-image">
+                        <img src="img/6.png" alt="Journaling Terapéutico">
+                        <div class="workshop-overlay">
+                            <h3>JOURNALING</h3>
+                            <p>TERAPÉUTICO</p>
+                        </div>
+                    </div>
+                    <div class="workshop-badge">JOURNALING TERAPÉUTICO</div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: TIENDAS FÍSICAS -->
+        <section class="stores-section">
+            <div class="stores-container-box">
+                <!-- Columna Izquierda: Grid de 4 Tiendas -->
+                <div class="stores-grid-left">
+                    <!-- Madrid -->
+                    <article class="store-card">
+                        <h3>Madrid - Flagship</h3>
+                        <p>Calle Serrano, 45</p>
+                        <p>28001 Madrid</p>
+                        <div class="store-map-img">
+                            <img src="img/ubi1.png" alt="Ubicación Madrid">
+                        </div>
+                    </article>
+
+                    <!-- Barcelona -->
+                    <article class="store-card">
+                        <h3>Barcelona</h3>
+                        <p>Paseo de Gracia, 89</p>
+                        <p>08008 Barcelona</p>
+                        <div class="store-map-img">
+                            <img src="img/ubi2.png" alt="Ubicación Barcelona">
+                        </div>
+                    </article>
+
+                    <!-- Valencia -->
+                    <article class="store-card">
+                        <h3>Valencia</h3>
+                        <p>Avenida Blasco, 125</p>
+                        <p>46022 Valencia</p>
+                        <div class="store-map-img">
+                            <img src="img/ubi3.png" alt="Ubicación Valencia">
+                        </div>
+                    </article>
+
+                    <!-- Sevilla -->
+                    <article class="store-card">
+                        <h3>Sevilla</h3>
+                        <p>Calle Betis, 28</p>
+                        <p>41010 Sevilla</p>
+                        <div class="store-map-img">
+                            <img src="img/ubi4.png" alt="Ubicación Sevilla">
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Columna Derecha: Título e Imagen Grande -->
+                <div class="stores-info-right">
+                    <div class="stores-title-box">
+                        <h2>TIENDAS FÍSICAS</h2>
+                    </div>
+                    <div class="stores-main-image">
+                        <img src="img/ubis.png" alt="Mapa Tiendas Físicas">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== PIE DE PÁGINA ==================== -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <a href="https://www.instagram.com/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#phone" title="Teléfono"><i class="fa-solid fa-phone"></i></a>
+                <a href="#smile" title="Sonríe"><i class="fa-regular fa-face-smile"></i></a>
+            </div>
+            <div class="footer-center">
+                <a href="#privacy">Política de datos</a> |
+                <a href="#cookies">Cookies</a>
+            </div>
+            <div class="footer-right">
+                <p>Copyright: Andrés Martínez Martínez</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/0a469f0b31.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
