@@ -12,7 +12,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="products-page">
     <!-- ==================== CABECERA ==================== -->
     <header class="header">
         <div class="header-container">
@@ -21,7 +21,7 @@
             </div>
             <h1 class="header-title">Semilla Consciente</h1>
             <div class="header-logo-right">
-                <div class="logo-circle dark"><img src="img/logo.svg" alt="Logo Semilla Consciente"></div>
+                <div class="logo-circle dark"><img src="img/logo.png" alt="Logo Semilla Consciente"></div>
             </div>
         </div>
     </header>
@@ -29,6 +29,12 @@
     <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
     <nav class="navbar">
         <div class="nav-container">
+            <!-- Menú de Hamburguesa (Solo móvil) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
             <!-- Buscador en lado izquierdo -->
             <form class="search-form" action="#" method="GET">
                 <input type="text" placeholder="Enter search terms" class="search-input">
@@ -40,14 +46,14 @@
                 <li><a href="index.html">🏠 Home</a></li>
                 <li><a href="biblioteca.html">Tu librería</a></li>
                 <li><a href="tienda.html" class="active">Comprar</a></li>
-                <li><a href="carrito.html">🛒 Carrito</a></li>
+                <li><a href="carrito.html">🛒 Carrito (<span id="cart-count">0</span>)</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- ==================== SECCIÓN DESTACADA ==================== -->
     <section class="shop-hero">
-        <h2>Compras Destacadas</h2>
+        <h2>PRODUCTS</h2>
     </section>
 
     <!-- ==================== CONTENIDO PRINCIPAL CON DOS COLUMNAS ==================== -->
@@ -77,7 +83,81 @@
         <!-- COLUMNA DERECHA: PRODUCTOS -->
         <section class="products-grid-section">
             <div class="products-grid">
-                <!-- Producto 1 -->
+                <!-- Producto 1: Libro -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/los 7 hábitos.png" alt="Los 7 hábitos">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Los 7 hábitos de la gente altamente efectiva</h3>
+                        <p class="product-description">Un libro clásico en el que el lector desarrollará aspectos que le
+                            hagan adaptarse a la realidad y a su vida cotidiana.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">23,95 €</span>
+                        </div>
+                        <button class="btn-add-cart" data-title="Los 7 hábitos" data-price="23.95"
+                            data-img="img/los 7 hábitos.png"
+                            data-desc="Un libro clásico en el que el lector desarrollará aspectos que le hagan adaptarse a la realidad y a su vida cotidiana.">Añadir
+                            al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 2: Libro -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/el arte de amar.png" alt="El arte de amar">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">El arte de amar</h3>
+                        <p class="product-description">"El arte de amar" es una obra de Erich Fromm que explora que el
+                            amor es un arte que requiere esfuerzo, conocimiento y práctica.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">22,00 €</span>
+                        </div>
+                        <button class="btn-add-cart" data-title="El arte de amar" data-price="22.00"
+                            data-img="img/el arte de amar.png"
+                            data-desc='"El arte de amar" es una obra de Erich Fromm...'>Añadir al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 3: Libro -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/fluir.png" alt="FLUIR">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">FLUIR (FLOW)</h3>
+                        <p class="product-description">Explora la felicidad a través del flujo. FLUIR es considerada uno
+                            de los libros más importantes de la psicología contemporánea.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">21,00 €</span>
+                        </div>
+                        <button class="btn-add-cart" data-title="FLUIR (FLOW)" data-price="21.00"
+                            data-img="img/fluir.png"
+                            data-desc="Explora la felicidad a través del flujo. FLUIR es considerada... ">Añadir al
+                            carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 4: Libro -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="img/quiet.png" alt="Quiet">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Quiet</h3>
+                        <p class="product-description">Quiet (2012) trata sobre las fortalezas y necesidades de los
+                            introvertidos. Un libro esencial para entender mejor a la gente introvertida.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">19,50 €</span>
+                        </div>
+                        <button class="btn-add-cart" data-title="Quiet" data-price="19.50" data-img="img/quiet.png"
+                            data-desc="Quiet (2012) trata sobre las fortalezas y necesidades de los introvertidos.">Añadir
+                            al carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 5: Libro -->
                 <article class="product-card">
                     <div class="product-image">
                         <img src="img/1.png" alt="Hábitos atómicos">
@@ -85,15 +165,18 @@
                     <div class="product-info">
                         <h3 class="product-title">Hábitos atómicos</h3>
                         <p class="product-description">"Hábitos atómicos" de James Clear. Descubre cómo los pequeños
-                            cambios pueden revolucionar tu vida a través de los hábitos disciplinarios y positivos.</p>
+                            cambios pueden revolucionar tu vida a través de los hábitos disciplinarios.</p>
                         <div class="product-price-section">
                             <span class="product-price">13,98 €</span>
                         </div>
-                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-add-cart" data-title="Hábitos atómicos" data-price="13.98"
+                            data-img="img/1.png"
+                            data-desc='"Hábitos atómicos" de James Clear. Descubre cómo los pequeños cambios pueden revolucionar tu vida.'>Añadir
+                            al carrito</button>
                     </div>
                 </article>
 
-                <!-- Producto 2 -->
+                <!-- Producto 6: Libro -->
                 <article class="product-card">
                     <div class="product-image">
                         <img src="img/2.png" alt="Mindfulness Diario">
@@ -105,39 +188,118 @@
                         <div class="product-price-section">
                             <span class="product-price">11,78 €</span>
                         </div>
-                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-add-cart" data-title="Mindfulness Diario" data-price="11.78"
+                            data-img="img/2.png" data-desc='Prácticas diarias para cultivar la atención plena.'>Añadir
+                            al carrito</button>
                     </div>
                 </article>
 
-                <!-- Producto 3 -->
+                <!-- Producto 7: Libro -->
                 <article class="product-card">
                     <div class="product-image">
-                        <img src="img/3.png" alt="Autoestima Sana">
+                        <img src="img/3.png" alt="Autoestima Sana (Libro)">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Autoestima Sana</h3>
+                        <h3 class="product-title">Libro Autoestima Sana</h3>
                         <p class="product-description">La autoestima es un pilar central de la psicología analítica.
                             Descubre cómo la introspección puede mejorar tu comunicación.</p>
                         <div class="product-price-section">
                             <span class="product-price">23,05 €</span>
                         </div>
-                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-add-cart" data-title="Libro Autoestima Sana" data-price="23.05"
+                            data-img="img/3.png" data-desc="Pilar central de la psicología analítica.">Añadir al
+                            carrito</button>
                     </div>
                 </article>
 
-                <!-- Producto 4 -->
+                <!-- Producto 8: Libro -->
                 <article class="product-card">
                     <div class="product-image">
                         <img src="img/4.png" alt="Relaciones Saludables">
                     </div>
                     <div class="product-info">
                         <h3 class="product-title">Relaciones Saludables</h3>
-                        <p class="product-description">"Relaciones Saludables" describe los vínculos que afectan guiar
-                            para mejorar la comunicación y crear vínculos emocionales.</p>
+                        <p class="product-description">"Relaciones Saludables" describe los vínculos que afectan para
+                            mejorar la comunicación y crear vínculos emocionales.</p>
                         <div class="product-price-section">
                             <span class="product-price">18,48 €</span>
                         </div>
-                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-add-cart" data-title="Relaciones Saludables" data-price="18.48"
+                            data-img="img/4.png"
+                            data-desc='"Relaciones Saludables" describe los vínculos emocionales.'>Añadir al
+                            carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 9: Taza -->
+                <article class="product-card">
+                    <div class="product-image contain">
+                        <img src="img/taza1.png" alt="Momento Presente">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Taza Momento Presente</h3>
+                        <p class="product-description">Taza diseñada especialmente para tus momentos de mindfulness y
+                            conciencia plena cada mañana.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">18,90 €</span>
+                        </div>
+                        <button class="btn-add-cart" data-title="Taza Momento Presente" data-price="18.90"
+                            data-img="img/taza1.png" data-desc="Taza de mindfulness y conciencia plena.">Añadir al
+                            carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 10: Taza -->
+                <article class="product-card">
+                    <div class="product-image contain">
+                        <img src="img/taza2.png" alt="Gratitud Diaria">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Taza Gratitud Diaria</h3>
+                        <p class="product-description">Comienza tu día agradeciendo con esta taza de cerámica de alta
+                            calidad y diseño inspirador.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">21,50 €</span>
+                        </div>
+                        <button class="btn-add-cart" data-title="Taza Gratitud Diaria" data-price="21.50"
+                            data-img="img/taza2.png" data-desc="Comienza tu día agradeciendo.">Añadir al
+                            carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 11: Taza -->
+                <article class="product-card">
+                    <div class="product-image contain">
+                        <img src="img/taza3.png" alt="Autoestima Sana (Taza)">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Taza Autoestima Sana</h3>
+                        <p class="product-description">Lleva tus afirmaciones favoritas a tu café diario para recordarte
+                            lo mucho que vales.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">19,95 €</span>
+                        </div>
+                        <button class="btn-add-cart" data-title="Taza Autoestima Sana" data-price="19.95"
+                            data-img="img/taza3.png" data-desc="Afirmaciones diarias en tu café.">Añadir al
+                            carrito</button>
+                    </div>
+                </article>
+
+                <!-- Producto 12: Taza -->
+                <article class="product-card">
+                    <div class="product-image contain">
+                        <img src="img/taza4.png" alt="Conexión Humana">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Taza Conexión Humana</h3>
+                        <p class="product-description">Diseñada para compartir momentos especiales y profundizar en tus
+                            vínculos emocionales.</p>
+                        <div class="product-price-section">
+                            <span class="product-price">22,00 €</span>
+                        </div>
+                        <button class="btn-add-cart" data-title="Taza Conexión Humana" data-price="22.00"
+                            data-img="img/taza4.png" data-desc="Profundiza en tus vínculos emocionales.">Añadir al
+                            carrito</button>
                     </div>
                 </article>
             </div>
@@ -162,6 +324,7 @@
             </div>
         </div>
     </footer>
+    <script src="cart.js"></script>
     <script src="https://kit.fontawesome.com/0a469f0b31.js" crossorigin="anonymous"></script>
 </body>
 

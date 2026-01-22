@@ -12,7 +12,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="products-page">
     <!-- ==================== CABECERA ==================== -->
     <header class="header">
         <div class="header-container">
@@ -29,6 +29,12 @@
     <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
     <nav class="navbar">
         <div class="nav-container">
+            <!-- Menú de Hamburguesa (Solo móvil) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
             <!-- Buscador en lado izquierdo -->
             <form class="search-form" action="#" method="GET">
                 <input type="text" placeholder="Enter search terms" class="search-input">
@@ -40,7 +46,7 @@
                 <li><a href="index.html">🏠 Home</a></li>
                 <li><a href="biblioteca.html" class="active">Tu librería</a></li>
                 <li><a href="tienda.html">Comprar</a></li>
-                <li><a href="carrito.html">🛒 Carrito</a></li>
+                <li><a href="carrito.html">🛒 Carrito (<span id="cart-count">0</span>)</a></li>
             </ul>
         </div>
     </nav>
@@ -89,7 +95,10 @@
                         <div class="product-price-section">
                             <span class="product-price">23,95€</span>
                         </div>
-                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-add-cart" data-title="Los 7 hábitos" data-price="23.95"
+                            data-img="img/los 7 hábitos.png"
+                            data-desc="Desarrolla aspectos que te hagan adaptarse a la realidad.">Añadir al
+                            carrito</button>
                     </div>
                 </article>
 
@@ -105,7 +114,9 @@
                         <div class="product-price-section">
                             <span class="product-price">22€</span>
                         </div>
-                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-add-cart" data-title="El arte de amar" data-price="22.00"
+                            data-img="img/el arte de amar.png"
+                            data-desc="Obra de Erich Fromm sobre el arte de amar.">Añadir al carrito</button>
                     </div>
                 </article>
 
@@ -121,7 +132,9 @@
                         <div class="product-price-section">
                             <span class="product-price">21€</span>
                         </div>
-                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-add-cart" data-title="FLUIR (FLOW)" data-price="21.00"
+                            data-img="img/fluir.png" data-desc="Explora la felicidad a través del flujo.">Añadir al
+                            carrito</button>
                     </div>
                 </article>
 
@@ -137,7 +150,9 @@
                         <div class="product-price-section">
                             <span class="product-price">19,50€</span>
                         </div>
-                        <button class="btn-add-cart">Añadir al carrito</button>
+                        <button class="btn-add-cart" data-title="Quiet" data-price="19.50" data-img="img/quiet.png"
+                            data-desc="Sobre las fortalezas y necesidades de los introvertidos.">Añadir al
+                            carrito</button>
                     </div>
                 </article>
 
@@ -226,6 +241,7 @@
             </div>
         </div>
     </footer>
+    <script src="cart.js"></script>
     <script src="https://kit.fontawesome.com/0a469f0b31.js" crossorigin="anonymous"></script>
 </body>
 

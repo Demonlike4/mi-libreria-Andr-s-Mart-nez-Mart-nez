@@ -12,7 +12,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="home">
     <!-- ==================== CABECERA ==================== -->
     <header class="header">
         <div class="header-container">
@@ -29,6 +29,12 @@
     <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
     <nav class="navbar">
         <div class="nav-container">
+            <!-- Menú de Hamburguesa (Solo móvil) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
             <!-- Buscador en lado izquierdo -->
             <form class="search-form" action="#" method="GET">
                 <input type="text" placeholder="Enter search terms" class="search-input">
@@ -40,7 +46,7 @@
                 <li><a href="index.html" class="active">🏠 Home</a></li>
                 <li><a href="biblioteca.html">Tu librería</a></li>
                 <li><a href="tienda.html">Comprar</a></li>
-                <li><a href="carrito.html">🛒 Carrito</a></li>
+                <li><a href="carrito.html">🛒 Carrito (<span id="cart-count">0</span>)</a></li>
             </ul>
         </div>
     </nav>
@@ -79,21 +85,32 @@
                         <div class="book-icon">📖</div>
                         <h4>Hábitos atómicos</h4>
                         <div class="book-cover"><img src="img/1.png" alt="Hábitos atómicos"></div>
+                        <button class="btn-add-cart" data-title="Hábitos atómicos" data-price="13.98"
+                            data-img="img/1.png" data-desc="Pequeños cambios para una vida extraordinaria.">Añadir al
+                            carrito</button>
                     </div>
                     <div class="book-category">
                         <div class="book-icon">📖</div>
                         <h4>Mindfulness Diario</h4>
                         <div class="book-cover"><img src="img/2.png" alt="Mindfulness Diario"></div>
+                        <button class="btn-add-cart" data-title="Mindfulness Diario" data-price="11.78"
+                            data-img="img/2.png" data-desc="Prácticas para la atención plena.">Añadir al
+                            carrito</button>
                     </div>
                     <div class="book-category">
                         <div class="book-icon">📖</div>
                         <h4>Autoestima Sana</h4>
                         <div class="book-cover"><img src="img/3.png" alt="Autoestima Sana"></div>
+                        <button class="btn-add-cart" data-title="Libro Autoestima Sana" data-price="23.05"
+                            data-img="img/3.png" data-desc="Pilar central de la psicología.">Añadir al carrito</button>
                     </div>
                     <div class="book-category">
                         <div class="book-icon">📖</div>
                         <h4>Construye</h4>
                         <div class="book-cover"><img src="img/4.png" alt="Construye"></div>
+                        <button class="btn-add-cart" data-title="Relaciones Saludables" data-price="18.48"
+                            data-img="img/4.png" data-desc="Crear vínculos emocionales duraderos.">Añadir al
+                            carrito</button>
                     </div>
                 </div>
             </article>
@@ -206,6 +223,7 @@
             </div>
         </div>
     </footer>
+    <script src="cart.js"></script>
     <script src="https://kit.fontawesome.com/0a469f0b31.js" crossorigin="anonymous"></script>
 </body>
 

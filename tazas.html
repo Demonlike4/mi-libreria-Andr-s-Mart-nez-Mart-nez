@@ -12,7 +12,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="products-page">
     <!-- ==================== CABECERA ==================== -->
     <header class="header">
         <div class="header-container">
@@ -29,6 +29,12 @@
     <!-- ==================== BARRA DE NAVEGACIÓN ==================== -->
     <nav class="navbar">
         <div class="nav-container">
+            <!-- Menú de Hamburguesa (Solo móvil) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
             <!-- Buscador en lado izquierdo -->
             <form class="search-form" action="#" method="GET">
                 <input type="text" placeholder="Enter search terms" class="search-input">
@@ -40,7 +46,7 @@
                 <li><a href="index.html">🏠 Home</a></li>
                 <li><a href="biblioteca.html">Tu librería</a></li>
                 <li><a href="tienda.html">Comprar</a></li>
-                <li><a href="carrito.html">🛒 Carrito</a></li>
+                <li><a href="carrito.html">🛒 Carrito (<span id="cart-count">0</span>)</a></li>
             </ul>
         </div>
     </nav>
@@ -158,6 +164,7 @@
             </div>
         </div>
     </footer>
+    <script src="cart.js"></script>
     <script src="https://kit.fontawesome.com/0a469f0b31.js" crossorigin="anonymous"></script>
 </body>
 
